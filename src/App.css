@@ -36,3 +36,102 @@
     transform: rotate(360deg);
   }
 }
+
+.greetings {
+  margin-top: 10px;
+  font-size: 3rem;
+}
+
+.id-card {
+display: flex;
+align-items: center;
+border: 1px solid black;
+width: 480px;
+height: 128px;
+margin-top: 20px;
+}
+
+.info {
+  text-align: left;
+  list-style: none;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+  
+
+.image {
+margin-top: 3px;
+ 
+}
+
+.random {
+  font-size: 1.7rem;
+  text-align: center;
+  margin-top: 30px;
+  border: 1px solid black;
+  width: 500px;
+}
+
+.resetRandom {
+  font-size: 1.1rem;
+  background-color: black;
+  color: white;
+  width: 300px;
+  height: 28px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+ 
+}
+
+.credit-card {
+  width: 500px;
+  height: 180px;
+}
+
+.type-card {
+  text-align: right;
+}
+
+.number-card {
+padding-top: 20px;
+
+}
+
+.expiration-card {
+  text-align: left;
+}
+
+
+.name-card {
+  text-align: left;
+}
+
+.body-card {
+  margin-top: 40px;
+}
+
+.body-rating {
+  margin-top: 20px;
+  display: flex;
+  font-size: 4rem;
+}
+
+.App {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.driver-card{
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+.img-driver-card {
+  margin-top: 25px;
+  margin-left: 12%;
+}
+.text-driver-card {
+  text-align: left;
+  margin-left: 20px;
+}

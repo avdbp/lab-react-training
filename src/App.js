@@ -6,12 +6,27 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
-
-
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+import FaceBook from './components/FaceBook';
+import SeparatorBar from './components/SeparatorBar';
+import SignupPage from './components/SignupPage';
+import RGBColorPicker from './components/RGBColorPicker';
 function App() {
+  const imageUrls = [
+    'https://randomuser.me/api/portraits/women/1.jpg',
+    'https://randomuser.me/api/portraits/men/1.jpg',
+    'https://randomuser.me/api/portraits/women/2.jpg',
+    'https://randomuser.me/api/portraits/men/2.jpg',
+  ];
   return (
     <div className="App">
       <div>
+      <h1>Id Card</h1>
+
         <IdCard
           lastName='Doe'
           firstName='John'
@@ -30,22 +45,41 @@ function App() {
         />
       </div>
 
+      <SeparatorBar/>
+
       <div>
+      <h1>Greetings</h1>
+
         <Greetings lang="de">Ludwig</Greetings>
         <Greetings lang="fr">François</Greetings>
       </div>
       
+      <SeparatorBar/>
+
+
+      <h1>Random</h1>
+
       <div className='random'>
         <Random min={1} max={6} />
         <Random min={1} max={100} />
       </div>
 
+      <SeparatorBar/>
+
+
       <div>
+      <h1>Box Color</h1>
+
         <BoxColor r={255} g={0} b={0} />
         <BoxColor r={2} g={255} b={255} />
       </div>
 
+      <SeparatorBar/>
+
       <div>
+
+      <h1>Credit Card</h1>
+
      <CreditCard
         typeCard="Visa"
         number="0123456789018845"
@@ -81,7 +115,11 @@ function App() {
 
       </div>
 
+      <SeparatorBar/>
+
       <div>
+      <h1 className='ratingCardH1' > Rating Card</h1>
+
       <Rating>0</Rating>
       <Rating>1.49</Rating>
       <Rating>1.5</Rating>
@@ -90,7 +128,11 @@ function App() {
       <Rating>5</Rating>
       </div>
 
+      <SeparatorBar/>
+
       <div>
+      <h1 className='DriverCardH1'>Driver Card</h1>
+
       <DriverCard
         name="Travis Kalanick"
         rating={4.2}
@@ -111,9 +153,65 @@ function App() {
       />
 
       </div>
-
       
+      <SeparatorBar/>
+
+
+      <div>
+      <LikeButton initialLikes={0} buttonText="Likes" />
+      </div>
+
+      <SeparatorBar/>
+
+
+      <div>
+      <ClickablePicture
+        img='maxence.png'
+        imgClicked='maxence-glasses.png'
+      />
+      </div>
+
+      <SeparatorBar/>
+
+      <div>
+      <Dice  />
+      </div>
+
+      <SeparatorBar/>
+
+
+      <div>
+      <h1>Image Carousel</h1>
+      <Carousel images={imageUrls} />
+      </div>
+
+      <SeparatorBar/>
+
+      <div>
+        <h1>Numbers Table</h1>
+        <NumbersTable limit={15} />
+      </div>
+
+      <SeparatorBar/>
+
+      <FaceBook  />
+      
+
+      <SeparatorBar/>
+
+
+      <div>
+        <SignupPage />
+      </div>
+
+      <SeparatorBar/>
+      
+      <div>
+      <RGBColorPicker />      </div>
+
     </div>
+
+    
 
     
   );

@@ -20,12 +20,12 @@ const CreditCard = (props) => {
     fontFamily: 'Arial, sans-serif',
     display: 'flex',
     flexDirection: 'column',
-    width: '300px',
-    height: '150px'
+    
     
   };
 
   return (
+    
     <div className='body-card' style={cardStyle}>
         <div>
             <p className='type-card'>{typeCard}</p>
